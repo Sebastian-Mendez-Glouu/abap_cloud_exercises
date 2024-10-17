@@ -1,0 +1,12 @@
+@EndUserText: {
+  label: 'Definición de servicio para ZC_TA_COMPRAS_DEMO'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TA_COMPRAS_DEMO'
+  }
+}
+define service ZUI_TA_COMPRAS_DEMO_O4
+  provider contracts odata_v4_ui {
+  expose ZC_TA_COMPRAS_DEMO as compras_demo;
+}

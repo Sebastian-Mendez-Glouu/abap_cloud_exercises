@@ -1,0 +1,52 @@
+managed implementation in class ZBP_R_TA_COMPRAS_DEMO unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_TA_COMPRAS_DEMO alias compras_demo
+persistent table zta_compras_demo
+draft table zta_compras_de_d
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master ( global )
+
+{
+  field ( mandatory : create )
+  IdCompra;
+
+  field ( readonly )
+  CreatedBy,
+  CreatedAt,
+  LastChangedBy,
+  LastChangedAt,
+  LocalLastChangedAt;
+
+  field ( readonly : update )
+  IdCompra;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for zta_compras_demo
+    {
+      IdCompra           = id_compra;
+      IdFactura          = id_factura;
+      IdProveedor        = id_proveedor;
+      FechaCompra        = fecha_compra;
+      FechaFactura       = fecha_factura;
+      Moneda             = moneda;
+      MontoTotal         = monto_total;
+      Estado             = estado;
+      CreatedBy          = created_by;
+      CreatedAt          = created_at;
+      LastChangedBy      = last_changed_by;
+      LastChangedAt      = last_changed_at;
+      LocalLastChangedAt = local_last_changed_at;
+    }
+}

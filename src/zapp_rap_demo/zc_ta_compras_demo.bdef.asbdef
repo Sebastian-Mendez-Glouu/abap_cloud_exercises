@@ -1,0 +1,17 @@
+projection implementation in class ZBP_C_TA_COMPRAS_DEMO unique;
+strict ( 2 );
+use draft;
+define behavior for ZC_TA_COMPRAS_DEMO alias compras_demo
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+}

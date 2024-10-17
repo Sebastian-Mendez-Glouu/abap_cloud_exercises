@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>ZIAM_RAP_DEMO_MBC</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>IAM para RAP DEMO</DESCRIPTION>
+     <RESPONSIBLE>CB9980000057</RESPONSIBLE>
+     <MASTER_LANGUAGE>ES</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>CHQ</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZAPP_RAP_DEMO</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>ZIAM_RAP_DEMO_MBC</APP_ID>
+    <APP_TYPE>MBC</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <SERVICE>
+     <item>
+      <REL_NAME>ZUI_TA_COMPRAS_DEMO_O4</REL_NAME>
+      <REL_TYPE>G4BA</REL_TYPE>
+      <APP_ID>ZIAM_RAP_DEMO_MBC</APP_ID>
+      <SRVC_NAME>5504281C2953312F0BF2D5665121E7</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>Vinculación de servicio para ZUI_TA_COMPRAS_DEMO_O4</TEXT>
+      <TYPE_TEXT>OData V4</TYPE_TEXT>
+     </item>
+    </SERVICE>
+    <AUTH>
+     <item>
+      <AUTH_OBJECT>S_TABU_NAM</AUTH_OBJECT>
+      <STATUS>U</STATUS>
+      <TEXT>Acceso a tablas mediante herramientas estándar genéricas</TEXT>
+      <AUTH_ITEM>
+       <item>
+        <UUID>l/9nW/y+Ht+jh5uLU0SviQ==</UUID>
+        <AUTH_OBJECT>S_TABU_NAM</AUTH_OBJECT>
+        <AUTH_OBJECT_INSTANCE>0001</AUTH_OBJECT_INSTANCE>
+        <TEXT>Acceso a tablas mediante herramientas estándar genéricas</TEXT>
+        <STATUS>U</STATUS>
+        <VALUES>
+         <item>
+          <FIELD>ACTVT</FIELD>
+          <VALUE>Modificar,Visualizar,Visualizar doc.modificación</VALUE>
+          <VALUES>
+           <item>
+            <UUID>l/9nW/y+Ht+jh5uLU0TPiQ==</UUID>
+            <LOW_VALUE>02</LOW_VALUE>
+           </item>
+           <item>
+            <UUID>l/9nW/y+Ht+jh5uLU0TviQ==</UUID>
+            <LOW_VALUE>03</LOW_VALUE>
+           </item>
+           <item>
+            <UUID>l/9nW/y+Ht+jh5uLU0UPiQ==</UUID>
+            <LOW_VALUE>08</LOW_VALUE>
+           </item>
+          </VALUES>
+          <STATUS>U</STATUS>
+          <IS_ACTVT>X</IS_ACTVT>
+         </item>
+         <item>
+          <FIELD>TABLE</FIELD>
+          <VALUE>ZR_TA_COMPRAS_DEMO</VALUE>
+          <VALUES>
+           <item>
+            <UUID>l/9nW/y+Ht+jh5uLU0UviQ==</UUID>
+            <LOW_VALUE>ZR_TA_COMPRAS_DEMO</LOW_VALUE>
+           </item>
+          </VALUES>
+          <STATUS>U</STATUS>
+         </item>
+        </VALUES>
+       </item>
+      </AUTH_ITEM>
+     </item>
+    </AUTH>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,165 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'IdCompra'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'IdCompra'
+annotate view ZC_TA_COMPRAS_DEMO with
+{
+  @EndUserText.label: 'IdCompra'
+  @UI.facet: [ {
+    label: 'Información general', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  IdCompra;
+  
+  @EndUserText.label: 'IdFactura'
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  IdFactura;
+  
+  @EndUserText.label: 'IdProveedor'
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  IdProveedor;
+  
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Datum'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Datum'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  FechaCompra;
+  
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Datum'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Datum'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  FechaFactura;
+  
+  @EndUserText.label: 'MontoTotal'
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  MontoTotal;
+  
+  @EndUserText.label: 'Estado'
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Estado;
+  
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Created By'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Created By'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Created On'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'Created On'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Changed By'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Changed By'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  LastChangedAt;
+  
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  LocalLastChangedAt;
+}
